@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>YehMeraUP-Shopping Cart</title>
+  <link rel="stylesheet" href="cart.style.css">
+</head>
+<body>
+<html>
+    <head>
+        <title>Shopping Cart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/index.js" ></script>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <script src="https://use.fontawesome.com/3c6f30056f.js"></script>
+        <title>Shopping cart</title>
+    </head>
+
+    <body>
+        
+        <div id="closing" class="container shopping-cart">
+            <div class="row header">
+                <div class="col-7">Subscriptions</div>
+                <div class="col-2">Time In Months</div>
+                <div class="col-2 price-header">Price/Monthy</div>
+            </div>
+
+            <div class="row product" data-unit-price="99">
+                <div class="col-1 image">
+                    <img src="YehMeraUP-LOGO-removebg-preview.png">
+                </div>
+
+                <div class="col-6">                    
+                    <h4>Premium</h4>
+                    <p>Best For Beginers</p>
+                </div>
+                
+                <div class="col-2">
+                    <div class="row input">
+                        <span  value="-" class="minus">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </span>
+                        <input type="text" value="1" class="count">
+                        <span value="+" class="plus">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </span>
+                    </div>                            
+                </div>
+                <div class="col-2 ">
+                    <p class="sum">Rs. <span class="price"></span></p>                        
+                </div>
+
+                <div class="col-1">                    
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>                       
+                </div>
+                <hr>
+            </div>
+            
+            <div class="row product" data-unit-price="129   ">
+                <div class="col-1 image">
+                    <img src="YehMeraUP-LOGO-removebg-preview.png">
+                </div>
+
+                <div class="col-6">
+                    <h4>ShipShape</h4>
+                    <p>BEST PLAN TO SELECT!!    </p>
+                </div>
+    
+                <div class="col-2">
+                    <div class="row input">
+                        <span value="-" class="minus">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </span>
+                        <input type="text" value="1" class="count ">
+                        <span value="+" class="plus">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </span>
+                    </div>                            
+                </div>
+
+                <div class="col-2">
+                    <p class="sum">Rs. <span class="price"></span></p>                        
+                </div>
+
+                <div class="col-1">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </div>
+                <hr>
+            </div>
+
+            <div class="row product" data-unit-price="49">
+                <div class="col-1 image">
+                    <img src="YehMeraUP-LOGO-removebg-preview.png">
+                </div>
+
+                <div class="col-6">                    
+                    <h4>Basic</h4>
+                    <p>Low Budget With Best Benefits</p>
+                </div>
+                
+                <div class="col-2">
+                    <div class="row input">
+                        <span  value="-" class="minus">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </span>
+                        <input type="text" value="1" class="count">
+                        <span value="+" class="plus">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </span>
+                    </div>                            
+                </div>
+                <div class="col-2 ">
+                    <p class="sum">Rs. <span class="price"></span></p>                        
+                </div>
+
+                <div class="col-1">                    
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>                       
+                </div>
+                <hr>
+            </div>
+            
+            <div class="row">  
+
+                <div class="col-7">
+                    <select id="mail-option">
+                        <option class="option" value="0">Payment Mode</option>
+                        <option class="option" value="2.5">G-Pay</option>
+                        <option class="option" value="3.49">Credit/Debit Card</option>                        
+                        <option class="option" value="10.00">PayPal</option>
+                    </select>
+                </div>
+
+                <div class="total-items">
+                    <p class="total-items"><span class="amount"></span> Items</p>
+                </div>
+
+                <div class="col-3">
+                    <p class="total-price"><span class="pad-right">Total:</span><span class="sum-total">Rs. </span><span class="price sum-total"></p>
+                </div>
+                <hr>
+            </div>
+
+            <div class="last">                
+                <button class="checkout" onclick="demoDisplay()"><a class="cool" href="buy.html">Checkout</a></button>                    
+            </div>
+            
+        </div>
+    </body>
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script><script  src="cart.script.js"></script>
+</body>
+</html>
